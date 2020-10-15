@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <script
+      src="https://kit.fontawesome.com/c9d8d572f0.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Weather App
+      </h1>
+      <form>
+        <input
+          type="text"
+          id="city-input"
+          placeholder="enter your city"
+          autocomplete="off"
+        />
+        <button type="submit">Search City</button>
+        <button type="button">Current</button>
+      </form>
+      <h2>
+        <span id="city">
+          Vancouver, BC
+        </span>
+        <small id="date">
+          Sunday September 20, 2020
+        </small>
+      </h2>
+      <div class="row">
+        <div class="col-4">
+          <i class="fas fa-sun"></i>
+          <span class="temperature" id="temperature-description"></span>
+        </div>
+        <div class="col-4">
+          <span class="temperature" id="temperature"></span>
+        </div>
+        <div class="col-4">
+          <ul>
+            <li>
+              Precipitation: 15%
+            </li>
+            <li>
+              Humidity: 82%
+            </li>
+            <li>
+              Wind: 8km/h
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          <strong>
+            Today
+          </strong>
+          <br />
+          <i class="fas fa-sun"></i>
+          <p>
+            18<a href="#" id="fahrenheit-link">&#176;F</a> |
+            <a href="#" id="celsius-link"> &#176;C</a>
+          </p>
+        </div>
+        <div class="col-2">
+          <strong>
+            Monday
+          </strong>
+          <br />
+          <i class="fas fa-cloud"></i>
+          <p>
+            21<a href="#" id="fahrenheit-link">&#176;F</a> |
+            <a href="#" id="celsius-link"> &#176;C</a>
+          </p>
+        </div>
+        <div class="col-2">
+          <strong>
+            Tuesday
+          </strong>
+          <br />
+          <i class="fas fa-cloud-rain"></i>
+          <p>
+            18<a href="#" id="fahrenheit-link">&#176;F</a> |
+            <a href="#" id="celsius-link"> &#176;C</a>
+          </p>
+        </div>
+        <div class="col-2">
+          <strong>
+            Wednesday
+          </strong>
+          <br />
+          <i class="fas fa-cloud-rain"></i>
+          <p>
+            17<a href="#" id="fahrenheit-link">&#176;F</a> |
+            <a href="#" id="celsius-link"> &#176;C</a>
+          </p>
+        </div>
+        <div class="col-2">
+          <strong>
+            Thursday
+          </strong>
+          <br />
+          <i class="fad fa-thunderstorm"></i>
+          <p>
+            16<a href="#" id="fahrenheit-link">&#176;F</a> |
+            <a href="#" id="celsius-link"> &#176;C</a>
+          </p>
+        </div>
+        <div class="col-2">
+          <strong>
+            Friday
+          </strong>
+          <br />
+          <i class="fas fa-cloud-rain"></i>
+          <p>
+            17<a href="#" id="fahrenheit-link">&#176;F</a> |
+            <a href="#" id="celsius-link"> &#176;C</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
